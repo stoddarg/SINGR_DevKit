@@ -8,7 +8,6 @@ LD_SRCS += \
 
 C_SRCS += \
 ../src/echo.c \
-../src/helloworld.c \
 ../src/i2c_access.c \
 ../src/main.c \
 ../src/platform.c \
@@ -24,7 +23,6 @@ C_SRCS += \
 
 OBJS += \
 ./src/echo.o \
-./src/helloworld.o \
 ./src/i2c_access.o \
 ./src/main.o \
 ./src/platform.o \
@@ -40,7 +38,6 @@ OBJS += \
 
 C_DEPS += \
 ./src/echo.d \
-./src/helloworld.d \
 ./src/i2c_access.d \
 ./src/main.d \
 ./src/platform.d \
