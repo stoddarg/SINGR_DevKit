@@ -141,12 +141,6 @@ int ProgramSfpPhy(void);
 #endif
 
 	init_platform();
-	ps7_post_config();
-	Xil_DCacheDisable();
-	InitializeAXIDma();
-	Xil_Out32 (XPAR_AXI_GPIO_16_BASEADDR, 16384);
-	Xil_Out32 (XPAR_AXI_GPIO_17_BASEADDR, 1);
-	InitializeInterruptSystem(XPAR_PS7_SCUGIC_0_DEVICE_ID);
 
 #if LWIP_DHCP==1
     ipaddr.addr = 0;
@@ -695,11 +689,11 @@ int ether(){
 	txcomplete = 1;
 	while (txcomplete == 1) {
 		sw = XGpioPs_ReadPin(&Gpio, etherStop); //read pin
-
-		if (sw == 1) { //sw=1 when switch is pushed
-			txcomplete = 0; //invert value stored in toggle
-
-		}
+//
+//		if (sw == 1) { //sw=1 when switch is pushed
+//			txcomplete = 0; //invert value stored in toggle
+//
+//		}
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();
 			TcpFastTmrFlag = 0;

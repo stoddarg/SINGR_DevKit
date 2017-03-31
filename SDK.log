@@ -553,3 +553,7 @@ Debug Operation Not Supported on the Target, Current Processor State is not "Sto
 17:29:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
 17:29:10 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
 17:32:13 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+15:17:06 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+15:17:08 INFO  : XSDB server has started successfully.
+15:45:29 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+15:45:31 INFO  : XSDB server has started successfully.
